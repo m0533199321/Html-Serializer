@@ -36,7 +36,7 @@ namespace html
                 {
                     selector.Classes.Add(queries[++i]);
                 }
-                else if (helper.HtmlTags.Contains(queries[i]) || helper.HtmlVoidTags.Contains(queries[i]))
+                else if (helper.HtmlTags.Contains(queries[i]))
                     selector.TagName = queries[i];
             }
             return selector;

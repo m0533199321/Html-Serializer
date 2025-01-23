@@ -75,7 +75,7 @@ namespace html
                                 Current.Attributes.Add(match.Groups[1].Value, match.Groups[2].Value);
                         }
 
-                        if (helper.HtmlVoidTags.Contains(firstWord))
+                        if (helper.HtmlVoidTags.Contains(firstWord) || rest.EndsWith('/'))
                             Current = Current.Parent;
                     }
                     else
